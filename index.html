@@ -85,33 +85,32 @@
             padding: 0;
         }
         .about-sections {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
 
-.interests,
-.education {
-    flex-basis: 48%; /* Adjust as needed */
-}
+        .interests,
+        .education {
+            flex-basis: 48%; /* Adjust as needed */
+        }
 
-.interests h3,
-.education h3 {
-    margin-top: 0;
-}
+        .interests h3,
+        .education h3 {
+            margin-top: 0;
+        }
 
-.interests ul,
-.education ul {
-    list-style-type: none;
-    padding: 0;
-}
+        .interests ul,
+        .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.interests ul li,
-.education ul li {
-    margin-bottom: 5px;
-}
+        .interests ul li,
+        .education ul li {
+            margin-bottom: 5px;
+        }
 
-        
         footer {
             text-align: center;
             padding: 20px;
@@ -119,6 +118,49 @@
             color: #fff;
             margin-top: 20px;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+        .container {
+            width: 95%;
+            padding-top: 120px; /* Offset for fixed header */
+        }
+
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header ul {
+            margin-top: 10px;
+        }
+
+        header li {
+            display: block;
+            padding: 10px 0;
+        }
+
+        .profile-picture {
+            float: none;
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+        }
+
+        .about-sections {
+            flex-direction: column;
+        }
+
+        .interests, .education {
+            flex-basis: 100%;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+}
     </style>
 </head>
 <body>
