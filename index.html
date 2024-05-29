@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMA Riyadh </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            color: #0a0a0a;
+            font-size: 30px;
+            text-decoration: none;
+            position: relative;
+            left: 50%;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .main p{
+            margin-right: 400px;
+            margin-left: 0px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .profile-picture {
+            float: right;
+            margin-left: 20px;
+            margin-right: 90px;
+            margin-top: 80px;
+            border-radius: 50%; 
+            width: 200px;
+            height: 200px;
+           
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info h3, .contact-info p {
+            margin: 0;
+            padding: 0;
+        }
+        .about-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.interests,
+.education {
+    flex-basis: 48%; /* Adjust as needed */
+}
+
+.interests h3,
+.education h3 {
+    margin-top: 0;
+}
+
+.interests ul,
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests ul li,
+.education ul li {
+    margin-bottom: 5px;
+}
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main" id="about">
+            <h2>About me</h2>
+            <img src="me-hill.jpg" alt="Profile Picture" class="profile-picture" width="150" height="150">
+            <h2>Hi there!</h2>
+            <p>
+                I am Riyadh, a Doctoral Researcher at the CISPA Helmholtz Center for Information Security in Saarbrücken, Germany. 
+                I hold a degree in Computer Science from Saarland University and began my research journey at CISPA in January 2024. 
+                Currently, I am a member of <a href="https://trust.cispa.saarland/">Trusted Systems Group</a> leads by Sven Bugiel.<br><br> 
+
+                My research is situated at the intersection of Mobile Security, Human-Computer Interaction (HCI), and Usable Security. 
+                I am particularly focused on enhancing privacy-preserving mechanisms within the Android system. In the broader context of 
+                Trusted Computing and Usable Security, my work aims to explore and improve the holistic user experience 
+                in privacy-related decision-making processes. <br><br>
+
+                By examining the intricate factors influencing privacy decisions, my goal is to contribute to the development of more 
+                intuitive and secure mobile environments. Through my interdisciplinary approach, I strive to bridge the gap between 
+                technical security measures and user-centric design, ensuring that privacy and usability go hand in hand.
+            </p>
+            <div class="about-sections">
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Mobile Security</li>
+                        <li>Human-Computer Interaction</li>
+                        <li>Usable Security and Privacy</li>
+                        <li>Immersive Technology (AR/VR)</li>
+                        <!-- Add more interests -->
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>M.Sc., Saarland University, Germany, 2023</li>
+                        <li>B.Sc., American International University-Bangladesh, 2017</li>
+                        <!-- Add more education -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main" id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>Usable Authentication in Virtual Reality: Exploring the Usability of PINs and Gestures</strong> - ACNS, 24. <a href="https://link.springer.com/chapter/10.1007/978-3-031-54776-8_16">[Link]</a></li>
+                <li><strong>Identify Subconscious Visual Response from Brain Signals</strong> - IHSI, 2018. <a href="https://link.springer.com/chapter/10.1007/978-3-319-73888-8_43">[Link]</a></li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </div>
+
+        <div class="main" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>WebAuthn</strong> - A brief description of the project. <a href="link-to-project1">[Link]</a></li>
+                <li><strong>Holistic User Journey</strong> - A brief description of the project. <a href="link-to-project2">[Link]</a></li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </div>
+
+        <div class="main" id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <h3>Email:</h3>
+                <p><a href="mailto:htma.riyadh@cispa.de">htma.riyadh@cispa.de</a></p>
+                <h3>Phone:</h3>
+                <p>+49 681 87083 2928 (Office Hour only)</p>
+                <h3>Office Address:</h3>
+                <p>Stuhlsatzenhaus 5 <br>
+                66123 Saarbrücken (Germany)</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/htmariyadh" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MoonRiyadh" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 HTMA Riyadh. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
