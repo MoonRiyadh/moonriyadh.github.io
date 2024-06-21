@@ -13,7 +13,8 @@
     </head>
     <!--Navigation bar-->
     <body id="navigation">
-        <nav class="w3-top">
+        <nav class="w3-top w3-bar">
+            
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#publication">Publication</a>
@@ -32,6 +33,15 @@
         <div id="particles-js"></div>
         <script src="particles.js"></script>
         <script src="app.js"></script>
+
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#publication" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATION</a>
+  <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+ <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>--> 
+</div>
 
         <!-- Page content -->
         <div class="w3-content" style="max-width:2000px;margin-top:46px">
@@ -131,18 +141,53 @@
  <!-- Image of location/map -->
 <img src="res/img/cispa1.jpeg" class="w3-image w3-greyscale-min" style="width:100%">
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <p class="w3-medium">© 2024 | HTMA Riyadh | All Rights Reserved.</p>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p class="w3-medium">© 2024 | HTMA Riyadh | All Rights Reserved.</p>
+      </footer>
 
-</footer>
+      <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000);    
+        }
+        
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 
     </body>
 </html>
