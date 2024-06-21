@@ -1,138 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Riyadh</title>
-<link rel="icon" type="image/png" href="icons8-eule-96.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        
+        <title>Riyadh</title>
+        <link rel="icon" type="image/png" href="icons8-eule-96.png">
+    </head>
+    <!--Navigation bar-->
+    <body id="navigation">
+        <nav class="w3-top">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#publication">Publication</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+            <span></span>
+        </nav>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-   
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#publication" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATION</a>
-    <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down" ></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Page 1</a>
-        <a href="#" class="w3-bar-item w3-button">Page 2</a>
-        <a href="#" class="w3-bar-item w3-button">Page 3</a>
-      </div>
-    </div>
+        <div class="welcome">
+        <div class="logo">Hi there!!</div>
+            <h1>This is Moon</h1>
+            <p>A passionate researcher at CISPA Helmholtz Center for Information Security</p>
+        </div>
 
-    <div class="w3-dropdown-hover w3-hide-small w3-right">
-      <button class="w3-padding-large w3-button" title="Web">
-        <i class="fa fa-globe" style='font-size:20px'></i>
-        <i class="fa fa-caret-down" ></i>
-      </button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="https://scholar.google.com/citations?user=4c7ooKMAAAAJ&hl=en" target="_blank" class="w3-bar-item w3-button">
-          <i class="fa fa-graduation-cap" style='font-size:20px'></i></a>
-        <a href="https://www.linkedin.com/in/htmariyadh/" target="_blank" class="w3-bar-item w3-button">
-          <i class="fa fa-linkedin" style='font-size:20px'></i></a>
-        <a href="https://github.com/MoonRiyadh" target="_blank" class="w3-bar-item w3-button">
-          <i class="fa fa-github" style='font-size:20px'></i></a>
-        <a href="https://x.com/htma_riyadh?t=Fpa-RWrJJnKR85hzbi1ZyQ&s=09" target="_blank" class="w3-bar-item w3-button">
-          <i class="fa fa-twitter" style='font-size:20px'></i></a>
-      </div>
-    </div>
-  </div>
-</div>
+        <!--Particles-->
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-  <a href="#publication" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATION</a>
-  <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
- <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>--> 
-</div>
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+            <!-- The About Section -->
+            <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+              <img src="res/img/hill.jpeg" class="w3-circle w3-hover-sepia w3-animate-fading" alt="Norway" style="width:30%">
+              <h2 class="w3-wide">About Me</h2>
+              <p class="w3-opacity"><i>I love simplicity</i></p>
+              
+              <p class="w3-justify">
+                          I am Riyadh, a Doctoral Researcher at the CISPA Helmholtz Center for Information Security in Saarbrücken, Germany. 
+                          I hold a degree in Computer Science from Saarland University and began my research journey at CISPA in 2024. 
+                          Currently, I am a member of <a href="https://trust.cispa.saarland/">Trusted Systems Group</a> leads by Sven Bugiel.<br><br> 
+          
+                          My research is situated at the intersection of Mobile Security, Human-Computer Interaction (HCI), and Usable Security. 
+                          I am particularly focused on enhancing privacy-preserving mechanisms within the Android system. In the broader context of 
+                          Trusted Computing and Usable Security, my work aims to explore and improve the holistic user experience 
+                          in privacy-related decision-making processes. <br><br>
+          
+                          Through my interdisciplinary approach, I strive to bridge the gap between technical security measures and user-centric design, 
+                          ensuring that privacy and usability go hand in hand.
+              </p>
+              
+              <div class="w3-row w3-padding-32">
+                <div class="w3-third w3-left-align">
+                  <h2>Interest</h2>
+                      <li>Mobile Security</li>
+                      <li>Human-Computer Interaction</li>
+                      <li>Usable Security and Privacy</li>
+                      <li>Immersive Technology (AR/VR)</li>
+                      <!-- Add more interests -->
+                </div>
+          
+                <div class="w3-third w3-left-align ">
+                  <h2>Education</h2>
+                  <li>M.Sc., Saarland University, Germany, 2023</li>
+                  <li>B.Sc., American International University-Bangladesh, 2017</li>
+                </div>
+          
+                <div class="w3-third w3-left-align ">
+                  <h2>Hobby</h2>
+                      <li>Coin Collection</li>
+                </div>
+              </div>
+            </div>
 
-  <!-- The About Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-    <div class="w3-container">
-      <img src="img/hill.jpeg" class="w3-circle w3-hover-sepia w3-animate-fading" alt="Norway" style="width:30%">
-    </div>
-    <h2 class="w3-wide">About Me</h2>
-    <p class="w3-opacity"><i>I love simplicity</i></p>
-    <p class="w3-justify">
-                I am Riyadh, a Doctoral Researcher at the CISPA Helmholtz Center for Information Security in Saarbrücken, Germany. 
-                I hold a degree in Computer Science from Saarland University and began my research journey at CISPA in 2024. 
-                Currently, I am a member of <a href="https://trust.cispa.saarland/">Trusted Systems Group</a> leads by Sven Bugiel.<br><br> 
+            <!-- The Tour Section -->
+            <div class="w3-light-grey" id="publication">
+                <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">Publications</h2>
+                <p class="w3-opacity w3-center"><i>Read as much as you can!</i></p><br>
+                <ul>
+                    <li><strong>Usable Authentication in Virtual Reality: Exploring the Usability of PINs and Gestures</strong> - ACNS, 24. <a href="https://link.springer.com/chapter/10.1007/978-3-031-54776-8_16">[Link]</a></li>
+                    <li><strong>Identify Subconscious Visual Response from Brain Signals</strong> - IHSI, 2018. <a href="https://link.springer.com/chapter/10.1007/978-3-319-73888-8_43">[Link]</a></li>
+                    <!-- Add more publications as needed -->
+                </ul>
+                </div>
+                </div>
+            </div>
+            <!--<div class="w3-light-grey" id="project">-->
+            <div id="project">
+                <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">Projects</h2>
+                <p class="w3-opacity w3-center"><i>Do it on your own!</i></p><br>
+                <ul>
+                    <li><strong>WebAuthn</strong> - A brief description of the project. <a href="link-to-project1">[Link]</a></li>
+                    <li><strong>Holistic User Journey</strong> - A brief description of the project. <a href="link-to-project2">[Link]</a></li>
+                    <!-- Add more publications as needed -->
+                </ul>
+                </div>
+                </div>
+            </div>
 
-                My research is situated at the intersection of Mobile Security, Human-Computer Interaction (HCI), and Usable Security. 
-                I am particularly focused on enhancing privacy-preserving mechanisms within the Android system. In the broader context of 
-                Trusted Computing and Usable Security, my work aims to explore and improve the holistic user experience 
-                in privacy-related decision-making processes. <br><br>
-
-                Through my interdisciplinary approach, I strive to bridge the gap between technical security measures and user-centric design, 
-                ensuring that privacy and usability go hand in hand.
-    </p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third w3-left-align">
-        <h2>Interest</h2>
-            <li>Mobile Security</li>
-            <li>Human-Computer Interaction</li>
-            <li>Usable Security and Privacy</li>
-            <li>Immersive Technology (AR/VR)</li>
-            <!-- Add more interests -->
-      </div>
-
-      <div class="w3-third w3-left-align ">
-        <h2>Education</h2>
-        <li>M.Sc., Saarland University, Germany, 2023</li>
-        <li>B.Sc., American International University-Bangladesh, 2017</li>
-      </div>
-
-      <div class="w3-third w3-left-align ">
-        <h2>Hobby</h2>
-            <li>Coin Collection</li>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-light-grey" id="publication">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Publications</h2>
-      <p class="w3-opacity w3-center"><i>Read as much as you can!</i></p><br>
-      <ul>
-        <li><strong>Usable Authentication in Virtual Reality: Exploring the Usability of PINs and Gestures</strong> - ACNS, 24. <a href="https://link.springer.com/chapter/10.1007/978-3-031-54776-8_16">[Link]</a></li>
-        <li><strong>Identify Subconscious Visual Response from Brain Signals</strong> - IHSI, 2018. <a href="https://link.springer.com/chapter/10.1007/978-3-319-73888-8_43">[Link]</a></li>
-        <!-- Add more publications as needed -->
-      </ul>
-      </div>
-    </div>
-  </div>
-<!--<div class="w3-light-grey" id="project">-->
-  <div id="project">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Projects</h2>
-      <p class="w3-opacity w3-center"><i>Do it on your own!</i></p><br>
-      <ul>
-        <li><strong>WebAuthn</strong> - A brief description of the project. <a href="link-to-project1">[Link]</a></li>
-        <li><strong>Holistic User Journey</strong> - A brief description of the project. <a href="link-to-project2">[Link]</a></li>
-        <!-- Add more publications as needed -->
-      </ul>
-      </div>
-    </div>
-  </div>
 <!-- border-->
 
 <div class="w3-black">
@@ -140,9 +113,8 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64 " style="max-width:800px" id="contact">
+<!-- The Contact Section -->
+<div class="w3-container w3-content w3-padding-64 " style="max-width:800px" id="contact">
       
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
@@ -155,12 +127,9 @@ body {font-family: "Lato", sans-serif}
       </div>
   </div>
   </div>
-  
 <!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<img src="cispa1.jpeg" class="w3-image w3-greyscale-min" style="width:100%">
+ <!-- Image of location/map -->
+<img src="res/img/cispa1.jpeg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -175,41 +144,5 @@ body {font-family: "Lato", sans-serif}
 
 </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-</body>
+    </body>
 </html>
