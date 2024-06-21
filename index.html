@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <style>
+        html {
+        scroll-behavior: smooth;
+        }
+      </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -26,7 +31,7 @@
         <div class="welcome">
         <div class="logo">Hi there!!</div>
             <h1>This is Moon</h1>
-            <p>A passionate researcher at CISPA Helmholtz Center for Information Security</p>
+            <p>'Designing intuitive and privacy-focused user experiences'</p>
         </div>
 
         <!--Particles-->
@@ -35,13 +40,13 @@
         <script src="app.js"></script>
 
         <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-  <a href="#publication" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATION</a>
-  <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
- <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>--> 
-</div>
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+          <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+          <a href="#publication" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATION</a>
+          <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>--> 
+        </div>
 
         <!-- Page content -->
         <div class="w3-content" style="max-width:2000px;margin-top:46px">
@@ -154,22 +159,6 @@
       </footer>
 
       <script>
-        // Automatic Slideshow - change image every 4 seconds
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 4000);    
-        }
-        
         // Used to toggle the menu on small screens when clicking on the menu button
         function myFunction() {
           var x = document.getElementById("navDemo");
